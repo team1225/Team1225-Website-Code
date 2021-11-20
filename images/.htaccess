@@ -7,13 +7,15 @@ AddHandler application/x-httpd-ea-php56 .php
 
 # mod_rewrite starts here
 
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
 ErrorDocument 404 /404.html
 ErrorDocument 401 /403.html
 ErrorDocument 403 /403.html
 ErrorDocument 503 /503.html
 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 RewriteCond %{HTTP_HOST} ^team1225\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.team1225\.com$
@@ -22,7 +24,3 @@ RewriteRule ^/?$ "http\:\/\/team1225\.com\/index" [R=302,L]
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 Header always set Content-Security-Policy "upgrade-insecure-requests;"
-RewriteCond %{HTTP_HOST} ^team1225\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.team1225\.com$
-RewriteRule ^about\-gsuite$ "http\:\/\/team1225\.com\/admin\.about\-gsuite\.html" [R=302,L]
-

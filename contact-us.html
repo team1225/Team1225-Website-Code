@@ -98,63 +98,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			
 	<!-- Page Contents Starts Here -->		
 
-			<div class="row">
+		<div class="row">
 			<div class="col-md-12">
               <div class="card card-border-color card-border-color-success">
                 <div class="card-header card-header-divider">Contact Form<span class="card-subtitle">Feel free to contact us through email or in the fields below about any questions, comments, or concerns you may have. <br> <b>contact@team1225.com</b></span></div>
                 <div class="card-body">
                   <form action="https://formspree.io/f/xgenjlql" method="post">
-                    <div class="form-group pt-2">
-                      <label for="inputEmail">Name *</label>
-                      <input class="form-control" id="inputName" type="text" placeholder="Enter your name" autocomplete="off" name="Respondant Name" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputPassword">Email *</label>
-                      <input class="form-control" id="inputEmail" type="email" placeholder="Enter your email" name="_replyto" autocomplete="off" required>
-                    </div>
-					<div class="form-group">
-                      <label for="inputPassword">Phone Number</label>
-                      <input class="form-control" id="inputPhone" type="number" placeholder="Enter your phone number (optional)" autocomplete="off" name="Respondant Phone Number">
-                    </div>
-					<div class="form-group">
-                      <label for="inputPassword">Team Number</label>
-                      <input class="form-control" id="inputBuisnessName" type="number" placeholder="Enter your team number (optional)" autocomplete="off" name="Respondant Team Number">
-                    </div>
-					<div class="form-group">
-                      <label for="inputPassword">Message</label>
-                      <input class="form-control" id="inputAddNotes" type="text" placeholder="Enter your message" autocomplete="off" name="Respondant Message">
-                    </div>
-					<div class="row pt-3">
-                      <div class="col-sm-6">
-                        <p class="text-left">
-                          <button class="btn btn-space btn-primary" type="submit">Submit</button>
-                          <button class="btn btn-space btn-secondary" type="reset">Clear Form</button>
-                        </p>
+					  <p class="card-subtitle">* indicates a required field</p>
+                    <div class="form-group row">
+                      <label class="col-12 col-sm-3 col-form-label text-sm-right" for="inputText3">Name *</label>
+                      <div class="col-12 col-sm-8 col-lg-8">
+                        <input class="form-control" id="inputName-1" type="text" autocomplete="off" name="Respondant Name" required>
                       </div>
-					</div>	
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-12 col-sm-3 col-form-label text-sm-right" for="inputPassword3">Email *</label>
+                      <div class="col-12 col-sm-8 col-lg-8">
+                        <input class="form-control" id="inputEmail-2" type="email" autocomplete="off" name="_replyto" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-12 col-sm-3 col-form-label text-sm-right" for="inputPlaceholder3">Team Number</label>
+                      <div class="col-12 col-sm-8 col-lg-8">
+                        <input class="form-control" id="inputTeamNumber-3" type="number" autocomplete="off" name="Respondant Team Number">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-12 col-sm-3 col-form-label text-sm-right" for="inputText3">Message Subject *</label>
+                      <div class="col-12 col-sm-8 col-lg-8">
+                        <input class="form-control" id="inputMessageSub-4" type="text" autocomplete="off" name="Message Subject" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-12 col-sm-3 col-form-label text-sm-right" for="inputTextarea3">Your Message *</label>
+                      <div class="col-12 col-sm-8 col-lg-8">
+                        <textarea class="form-control" id="inputMessage-5" name="Respondant Message" required></textarea>
+                      </div>
+                    </div>
+					<div class="form-group row">
+                      <label class="col-12 col-sm-3 col-form-label text-sm-right"></label>
+                      <div class="col-12 col-sm-8 col-lg-8">
+                      	 <button class="btn-primary btn btn-rounded btn-space" name="skip_Submit" type="submit" value="Submit">Submit Form</button>
+					  	 <button class="btn btn-rounded btn-space btn-secondary md-trigger" type="reset" value="Clear Form">Clear Form</button>
+					  </div>
+                    </div>
                   </form>
-					
-					
-					<div class="modal-container colored-header colored-header-success modal-effect-1" id="nft-colored">
-                    <div class="modal-content">
-                      <div class="modal-header modal-header-colored">
-                        <h3 class="modal-title">Are you sure?</h3>
-                        <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close">             </span></button>
-                      </div>
-                      <div class="modal-body">
-                        <p>Are you sure you want to clear the form of it's contents?</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button class="btn btn-secondary modal-close" type="button" data-dismiss="modal">Cancel</button>
-                        <button class="btn btn-success modal-close" type="button" data-dismiss="modal">Proceed</button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
-				
-			</div>
+		 </div>
 			
 	<!-- Page Contents Ends Here -->		
 			

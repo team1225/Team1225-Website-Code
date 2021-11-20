@@ -15,6 +15,14 @@
     <link rel="stylesheet" type="text/css" href="assets/lib/perfect-scrollbar/css/perfect-scrollbar.css"/>
     <link rel="stylesheet" type="text/css" href="assets/lib/material-design-icons/css/material-design-iconic-font.min.css"/>
     <link rel="stylesheet" href="assets/css/app.css" type="text/css"/>
+	  
+<script language="javascript" type="text/javascript">
+function windowClose() {
+window.open('','_parent','');
+window.close();
+}
+</script>
+	  
   </head>
   <body class="be-splash-screen">
     <div class="be-wrapper be-nosidebar-left">
@@ -36,21 +44,29 @@
       <div class="be-content">
 		  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
         <div class="main-content container-fluid">
-          <div class="row">
+		<div class="row">
             <div class="col-12 col-lg-6 offset-lg-3">
-<div class="text-center card card-contrast">
-                <div class="card-header card-header-contrast card-header-featured text-center"><h1>Form Submitted!</h1></div>
+			  <div class="text-center card card-contrast">
+                <div class="card-header card-header-contrast card-header-featured text-center">
+				  <div class="alert alert-contrast alert-success alert-dismissible" role="alert" style="margin-bottom: 0px">
+                    <div class="icon"><span class="mdi mdi-check-circle"></span></div>
+                    <div class="message">
+                      <strong>Form Submitted!</strong>
+                    </div>
+                  </div>
+				</div>
                 <div class="card-body">
 					<div class="card-title">Thanks for reaching out!</div>
                   <p class=" lead">A member of our team will reach out to you shortly.<br>You will automatically be redirected to our homepage in <strong><span id="counter">15</span></strong> seconds.</p>
 					<br> <br> 
 					<p class="text-muted"> What do you want to do next?</p>
-					<a class="btn-primary btn btn-rounded btn-space" href="index.html"><i class="icon icon-left mdi mdi-home"></i> Go Home</a> 
-					<a class="btn-primary btn btn-rounded btn-space" href="javascript:window.history.back();"><i class="icon icon-left mdi mdi-assignment"></i> Submit another response</a>
+					<a class="btn-primary btn btn-rounded btn-space" href="https://team1225.com/"><i class="icon icon-left mdi mdi-home"></i> Go Home</a>
+					<a class="btn-primary btn btn-rounded btn-space" href="https://team1225.com/contact-us"><i class="icon icon-left mdi mdi-account"></i> Contact Us, Again</a>
                 </div>
               </div>
           </div>
         </div>
+			
       </div>
     </div>
     <script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
