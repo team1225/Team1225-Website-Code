@@ -4846,6 +4846,17 @@ input[type="button"].btn-block {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
+.card-link-index {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.card-link-index:hover {
+  color: #8cc125;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 .card-header:first-child {
   border-radius: 2px 2px 0 0;
 }
@@ -21225,12 +21236,12 @@ fieldset[disabled] .btn-color.btn-evernote.active {
 }
 
 .card-full-success {
-  background-color: #37b358;
+  background-color: #7e4cd1;
   color: #FFFFFF;
 }
 
 .card-full-success .card-header-contrast {
-  background-color: #3bbf5e;
+  background-color: #9A73DB;
   padding: 20px 20px 15px;
   margin: 0;
 }
@@ -28281,11 +28292,11 @@ fieldset[disabled] .full-calendar .fc-button.active {
 }
 
 .user-timeline-compact:before {
-  background-color: #f6c163;
+  background-color: #7e4cd1;
 }
 
 .user-timeline-compact:after {
-  background-color: #f6c163;
+  background-color: #7e4cd1;
 }
 
 .user-timeline-compact > li {
@@ -28297,11 +28308,11 @@ fieldset[disabled] .full-calendar .fc-button.active {
 }
 
 .user-timeline-compact > li:before {
-  border: 1px solid #f6c163;
+  border: 2px solid #7e4cd1;
 }
 
 .user-timeline-compact > li.latest:before {
-  background-color: #f6c163;
+  background-color: #7e4cd1;
 }
 
 
@@ -28380,3 +28391,7 @@ div#slider figure {
             }
 }  
 
+.footer-logo{
+    width: 175px;
+    
+}
