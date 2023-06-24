@@ -43,6 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta property="og:url" content="https://www.team1225.com/team-sponsors.html">
 
 	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/teamSponsors.css" rel="stylesheet" type="text/css">
 	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap_limitless.css" id="stylesheet" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap.css" id="stylesheet1" rel="stylesheet" type="text/css">
@@ -210,82 +211,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							
 						<h3 class="mb-3">Strategic Partners</h3>
 						
-						<div class="col-lg-6">
-
-							<!-- Card -->
-							<div class="card">
-								<div class="card-img-actions">
-									<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/Henderson-Co-Schools-01.png" alt="">
+						<template id="strat-partners">
+							<div class="col-lg-6 px-2 ">
+	
+								<!-- Card -->
+								<div class="card set-height">
+									<div class="card-img-actions">
+										<img class="card-img-top img-fluid" src="" alt="">
+									</div>
+	
+									<div class="card-body">
+										<h5 class="card-title">Boys and Girls Club of Henderson County</h5>
+										<p class="card-text"></p>
+									</div>
+	
+									<div class="card-footer d-flex justify-content-between">
+										<a href="" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
+									</div>
 								</div>
-
-								<div class="card-body">
-									<h5 class="card-title">Henderson County Public Schools</h5>
-									<p class="card-text">Our Platinum Sponsor Henderson County Public Schools is committed to providing all students the opportunity to learn and the encouragement to succeed in a safe environment. HCPS is our main sponsor and source of student team members.<br><br></p>
-								</div>
-
-								<div class="card-footer d-flex justify-content-between">
-									<a href="http://www.hendersoncountypublicschoolsnc.org/" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
-								</div>
-							</div>
-							<!-- /Card -->
-
-						</div>
-						<div class="col-lg-6">
-
-							<!-- Card -->
-							<div class="card">
-								<div class="card-img-actions">
-									<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/B&GC-HC-Main-01.png" alt="">
-								</div>
-
-								<div class="card-body">
-									<h5 class="card-title">Boys and Girls Club of Henderson County</h5>
-									<p class="card-text">Our Strategic Partner The Boys and Girls Club of Henderson County provides us with a much-need Workspace and Meeting Area. They also offer programs that inspire and enable young people,to realize their full potential as productive, responsible, and caring citizens.</p>
-								</div>
-
-								<div class="card-footer d-flex justify-content-between">
-									<a href="https://www.bgchendersonco.org/" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
-								</div>
-							</div>
-							<!-- /Card -->
-
-						</div>
+								<!-- /Card -->
+							</template>
+							<div id="strat-partners-cont" style="width:100vw; display: flex;justify-content: center; flex-wrap: wrap;"></div>
 					</div>
 					<!-- /row -->
 				<br><br>
 					<!-- row -->
 					<div class="row">
-							
+						<template id="plat">
+							<div class="col-lg-6 px-2">
+								<!-- Card -->
+								<div class="card set-height">
+									<div class="card-img-actions">
+										<img class="card-img-top img-fluid" src="" alt="">
+									</div>
+	
+									<div class="card-body">
+										<h5 class="card-title"></h5>
+										<p class="card-text"></p>
+									</div>
+	
+									<div class="card-footer d-flex justify-content-between">
+										<a href="" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
+										<!-- <a href="https://monday.com/p/wp-content/uploads/2021/11/RS-Opener_V2.mp4" target="_blank" class="btn btn-primary btn-sm"><i class="ph-file-video"></i> Watch Video</a> -->
+									</div>
+								</div>
+								<!-- /Card -->
+							</template>
+
 						<h3 class="mb-3">Platinum Level Sponsors</h3>
-						
-						<div class="col-lg-3">
-
-						</div>
-						<div class="col-lg-6">
-
-							<!-- Card -->
-							<div class="card">
-								<div class="card-img-actions">
-									<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/monday-logo.png" alt="">
-								</div>
-
-								<div class="card-body">
-									<h5 class="card-title">Monday.com</h5>
-									<p class="card-text">Our Platinum Sponsor monday.com <br>
-										monday.com is a work operating system (Work OS) where organizations of any size can create the tools and processes they need to manage every aspect of their work. By combining building blocks, like apps automations and integrations, teams can build or customize the workflows of their dreams.</p>
-								</div>
-
-								<div class="card-footer d-flex justify-content-between">
-									<a href="https://www.bgchendersonco.org/" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
-									<a href="https://monday.com/p/wp-content/uploads/2021/11/RS-Opener_V2.mp4" target="_blank" class="btn btn-primary btn-sm"><i class="ph-file-video"></i> Watch Video</a>
-								</div>
-							</div>
-							<!-- /Card -->
-
-						</div>
-						<div class="col-lg-3">
-
-						</div>
+						<div id="plat-cont" class="container"></div>
 					</div>
 					<!-- /row -->
 				<br><br>
@@ -294,52 +268,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							
 						<h3 class="mb-3">Gold Level Sponsors</h3>
 						
-						<div class="col-lg-2">
-
-						</div>
-						<div class="col-lg-4">
-
-							<!-- Card -->
-							<div class="card">
-								<div class="card-img-actions">
-									<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/theBellFoundation.png" alt="">
+						<template id="gold">
+							<div class="col-lg-4 px-2">
+	
+								<!-- Card -->
+								<div class="card set-height">
+									<div class="card-img-actions">
+										<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/theBellFoundation.png" alt="">
+									</div>
+	
+									<div class="card-body">
+										<h5 class="card-title">The Bell Foundation</h5>
+										<p class="card-text">Our Gold Sponsor The Bell Foundation is committed to expanding the opportunity to the youth of Western North Carolina. Supplying monetary and capital support as well as mentorship and advisory council. A true powerhouse that embodies the core principles of FIRST.<br><br></p>
+									</div>
+	
+									<div class="card-footer d-flex justify-content-between">
+										<a href="http://youseeresults.com/" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
+									</div>
 								</div>
-
-								<div class="card-body">
-									<h5 class="card-title">The Bell Foundation</h5>
-									<p class="card-text">Our Gold Sponsor The Bell Foundation is committed to expanding the opportunity to the youth of Western North Carolina. Supplying monetary and capital support as well as mentorship and advisory council. A true powerhouse that embodies the core principles of FIRST.<br><br></p>
-								</div>
-
-								<div class="card-footer d-flex justify-content-between">
-									<a href="http://youseeresults.com/" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
-								</div>
+								<!-- /Card -->
+	
 							</div>
-							<!-- /Card -->
+						</template>
+						<div id=gold-cont class="container"></div>
 
-						</div>
-						<div class="col-lg-4">
-
-							<!-- Card -->
-							<div class="card">
-								<div class="card-img-actions">
-									<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/FIRST-MainRGB-01.png" alt="">
-								</div>
-
-								<div class="card-body">
-									<h5 class="card-title">FIRST</h5>
-									<p class="card-text">Our Gold Sponsor For Inspiration and Recognition of Science and Technology is an international youth organization that operates the FIRST Robotics Competition, FIRST LEGO League Challenge, FIRST LEGO League Explore, FIRST LEGO League Discover, and FIRST Tech Challenge competitions.</p>
-								</div>
-
-								<div class="card-footer d-flex justify-content-between">
-									<a href="http://firstinspires.org/" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
-								</div>
-							</div>
-							<!-- /Card -->
-
-						</div>
-						<div class="col-lg-2">
-
-						</div>
 					</div>
 					<!-- /row -->
 				<br><br>
@@ -347,13 +299,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="row">
 							
 						<h3 class="mb-3">Silver Level Sponsors</h3>
-
-						<div class="col-lg-3">
-
+						<div id="silver-cont" class="container"></div>
+						
+						<template id="silver">
+							<div class="col-lg-3 px-2">
 							<!-- Card -->
-							<div class="card">
+							<div class="card set-height">
 								<div class="card-img-actions">
-									<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/Equilibar-mainlogo-01.png" alt="">
+									<img class="card-img-top img-fluid" src="" alt="">
 								</div>
 
 								<div class="card-body">
@@ -362,73 +315,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								</div>
 
 								<div class="card-footer d-flex justify-content-between">
-									<a href="https://www.equilibar.com/" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
+									<a href="" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
 								</div>
 							</div>
 							<!-- /Card -->
-
 						</div>
-						<div class="col-lg-3">
-
-							<!-- Card -->
-							<div class="card">
-								<div class="card-img-actions">
-									<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/FIRST_NC-MainRGB-01.png" alt="">
-								</div>
-
-								<div class="card-body">
-									<h5 class="card-title">FIRST NC</h5>
-									<p class="card-text">Our Silver Sponsor FIRST North Carolina is a 501(c)3 not-for-profit organization based in North Carolina and the Program Delivery Organization for the FIRST LEGO League Discover, FIRST LEGO League Explore, and the FIRST Robotics Competition programs in North Carolina.</p>
-								</div>
-
-								<div class="card-footer d-flex justify-content-between">
-									<a href="https://www.firstnorthcarolina.org/" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
-								</div>
-							</div>
-							<!-- /Card -->
-
-						</div>
-						<div class="col-lg-3">
-
-							<!-- Card -->
-							<div class="card">
-								<div class="card-img-actions">
-									<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/Optimum-Logo-01.png" alt="">
-								</div>
-
-								<div class="card-body">
-									<h5 class="card-title">Optimum</h5>
-									<p class="card-text">Our Silver Sponsor Optimum is an Internet, TV, Mobile and Home phone company serving the New York, New Jersey, Connecticut Tri-State area, and North Carolina. It is the 4th largest cable provider in the United States and is a Fortune 500 telecommunications company.</p>
-								</div>
-
-								<div class="card-footer d-flex justify-content-between">
-									<a href="https://www.optimum.net/" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
-								</div>
-							</div>
-							<!-- /Card -->
-
-						</div>
-						<div class="col-lg-3">
-
-							<!-- Card -->
-							<div class="card">
-								<div class="card-img-actions">
-									<img class="card-img-top img-fluid" src="assets/images/Current-Sponsors/Borgwarner-logo.png" alt="">
-								</div>
-
-								<div class="card-body">
-									<h5 class="card-title">BorgWarner</h5>
-									<p class="card-text">Our Silver Sponsor BorgWarner Inc, is an American automotive supplier headquartered in Auburn Hills, Michigan. The company maintains production facilities and technical systems at 93 sites in 22 countries worldwide and has around 49,000 employees.
-									</p>
-								</div>
-
-								<div class="card-footer d-flex justify-content-between">
-									<a href="https://www.borgwarner.com/home" class="btn btn-primary btn-sm"><i class="ph-link"></i> Visit Site</a>
-								</div>
-							</div>
-							<!-- /Card -->
-
-						</div>
+						</template>
+					
 					</div>
 					<!-- /row -->
 				
@@ -491,6 +384,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 	<!-- /footer -->
-
+	<script src="assets/SPONSORS.js"></script>
+	<script src="assets/js/sponsor-card.js"></script>
 </body>
 </html>
