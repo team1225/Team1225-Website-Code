@@ -7,10 +7,11 @@ AddHandler application/x-httpd-ea-php56 .php
 
 # mod_rewrite starts here
 
-ErrorDocument 404 /404.html
-ErrorDocument 401 /403.html
-ErrorDocument 403 /403.html
-ErrorDocument 503 /503.html
+ErrorDocument 404 /assets/error-pages/404.html
+ErrorDocument 401 /assets/error-pages/403.html
+ErrorDocument 403 /assets/error-pages/403.html
+ErrorDocument 503 /assets/error-pages/503.html
+ErrorDocument 406 /assets/error-pages/406.html
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
@@ -25,4 +26,16 @@ Header always set Content-Security-Policy "upgrade-insecure-requests;"
 RewriteCond %{HTTP_HOST} ^team1225\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.team1225\.com$
 RewriteRule ^about\-gsuite$ "http\:\/\/team1225\.com\/admin\.about\-gsuite\.html" [R=302,L]
+RewriteCond %{HTTP_HOST} ^team1225\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.team1225\.com$
+RewriteRule ^tv\.main\-landing$ "https\:\/\/start\.team1225\.com\/" [R=302,L]
+RewriteCond %{HTTP_HOST} ^team1225\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.team1225\.com$
+RewriteRule ^tv\.main\-landing\.html$ "https\:\/\/start\.team1225\.com\/" [R=302,L]
 
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72___lsphp .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
